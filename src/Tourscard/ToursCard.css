@@ -9,7 +9,7 @@
 .img{
     width: 250px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 .head{
     font-size: 1.5rem;
@@ -52,5 +52,5 @@
     background-color: #ff6347;
     color: white;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 0px 10px 0px 10px;
 }
