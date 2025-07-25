@@ -1,32 +1,132 @@
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
     text-align: center;
 }
-.tour-card{
+
+.tour-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
-.footer{
-    text-align: center;
-    margin-top: 20px;
-    color: #666;
+
+/* Responsive Tour Card Layout */
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
 }
-.btn{
+
+/* Image Styling */
+.img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Price Tag on Top Right of Image */
+.price-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Tour Description */
+.bio {
+    padding: 0 10px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+/* Read More Link */
+.read {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Header and Price */
+.head {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 18px;
+    color: green;
+}
+
+/* Buttons */
+.btn {
     background-color: #ff6347;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
-} 
-.no-tours{
+    margin: 10px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #e5533c;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* No Tours Message */
+.no-tours {
     color: red;
     font-size: 1.5rem;
     margin-top: 20px;
+}
+
+/* ========================
+   Responsive Design
+   ======================== */
+
+/* For tablets and smaller laptops */
+@media (max-width: 992px) {
+    .card {
+        width: 45%;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+    .tour-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .btn {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .price-tag {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }
