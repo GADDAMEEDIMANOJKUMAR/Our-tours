@@ -1,0 +1,56 @@
+.card{
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+}
+.img{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
+.head{
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.bio{
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+.read{
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 20px;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.price{
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.btn{
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.img-card{
+    position: relative;
+}
+.price-tag{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #ff6347;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
