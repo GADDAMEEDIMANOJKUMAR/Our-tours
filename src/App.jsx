@@ -38,8 +38,7 @@ const App = () => {
         
       {data.length === 0 && <h2 className="no-tours" >No Tours Left</h2>}
       {data.length > 0 ? <button className='btn' onClick={() => setData([])}>Remove All Tours</button> : <button className='btn' onClick={fetchTours}>Refresh Tours</button>}
-      <h3 className='footer'>© 2023 Our Tours. All rights reserved.</h3>
-      <h4 className='footer'>Created by Manoj Kumar</h4>
+      <h4 className='footer'>Created by ❤️ Manoj Kumar</h4>
         </div> 
     </div>
   )
